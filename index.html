@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Templates CSS-->
+    <link rel="stylesheet" href="static/css/colors.css">
+    <link rel="stylesheet" href="static/css/fonts.css">
+    <link rel="stylesheet" href="static/css/layout.css">
+    <link rel="stylesheet" href="static/css/utilities.css">
+    <!--End Templates CSS-->
+    <title>Aggregat4</title>
+</head>
+<body>
+   <header class="bg-color-black">
+        <div class="layout-logo">
+            <img src="static/img/Aggregat4_Logo_final.png" alt="Aggregat4 Logo">
+        </div>
+        <nav class="layout-navigation">
+            <ul>
+                <li><a class="color-bluewhite font-title-l1" href="#home">Home</a></li>
+                <li><a class="color-bluewhite font-title-l1"  href="#news">News</a></li>
+                <li><a class="color-bluewhite font-title-l1" href="#services">Services</a></li>
+                <li><a class="color-bluewhite font-title-l1" href="#about">Über Uns</a></li>
+                <li><a class="color-bluewhite font-title-l1" href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--News-->
+        <section id="news">
+          <article>
+          </article>
+        </section>
+        <!--Catcher-->
+        <section id="home">
+        <div class="content-block">
+          <h2 class=" color-black hover-color-darkblue font-title-l2">Schubkraft für dein Servicemanagement?</h2>
+          <p>Ich bringe meine Erfahrung als Service Manager ein, um deine IT-Services effizienter zu gestalten und deinem Unternehmen echten Mehrwert zu liefern.</p>
+          <div class="block-grid">
+            <div class="block-content-left"></div>
+            <div class="block-content-right"></div>
+          </div> 
+        </div>
+        <div class="content-block">
+          <h2 class="color-darkblue hover-color-darkblue font-title-l2">Vorbereitung für den Start</h2>
+          <p>Wir schaffen <b>die Basis</b> für einen erfolgreichen Start...</p>
+        </div>
+        <div class="content-block">
+          <h2 class="color-darkblue hover-color-darkblue font-title-l2">Countdown 3,2,1 .... Start!</h2>
+          <p>Was alles für einen Reibungslosen <b>Start deines Servicemanagements</b> oder für einen <b>Neustart</b> beachtet werden muss...</p>
+        </div>
+        <div class="content-block">
+          <h2 class="color-darkblue hover-color-darkblue font-title-l2">Damit du auf Kurs bleibst...</h2>
+          <p>Damit du auf Kurs bleibst und es dir nicht wie <a href="https://youtu.be/lJbSJCpb8Mo?si=b4hMD6iDchnKCcoG"><b>Major Tom</b></a> geht ... </p>
+        </div>
+        </section>
+        <!--Services-->
+        <section id="services">
+          <!--Service definition-->
+          <h2 class="font-title-l2 color-black">Services</h2>
+          <div class="content-block">
+            <h3 class="font-title-l3 color-darkblue">SMaaS - Service Management as a Service</h3>
+            <p>Mache jetzt den <b>kostenlosen</b> Servicevergleich</p>
+            <button class="btn-quickcheck bg-color-darkblue color-white font-title-l2">Servicecheck</button>
+            </div>
+        </section>
+        <!--Über Uns-->
+        <section id="about">
+            <h2 class="font-title-l2">Über Aggregat4</h2>
+          <div class="content-block">
+            <h3 class="font-title-l3">Die 4A's (Werte)</h3>
+            <ul class="aboutus-values">
+              <li class="bg-color-bluewhite"><b class="color-darkblue hover-color-darkblue">Adaptivität:</b> Flexibel an Ihre Bedürfnisse anpassbar</li>
+              <li class="bg-color-bluewhite"><b class="color-darkblue hover-color-darkblue">Agilität:</b> Beliebig erweiterbar und schnelle Reaktion auf wandelnde Kundenbedürfnisse</li>
+              <li class="bg-color-bluewhite"><b class="color-darkblue hover-color-darkblue">Analytisch:</b> Durch Analyse und Messung bestehender und zukünftiger Handlungen zu fundierten und nachhaltigen Ergebnissen</li>
+              <li class="bg-color-bluewhite"><b class="color-darkblue hover-color-darkblue">Automatisierung:</b> Durch Tooleinsatz und Analyse zu schnelleren, effizienteren Prozessen und damit auch zufriedene Kunden</li>
+            </ul>
+          </div>
+        </section>
+        <!--Contact-->
+        <section id="kontakt" class="contact-section">
+          <h2 class="font-title-l2 text-center">Sie haben Fragen?</h2>
+          <form class="contact-form">
+            <div class="fname-section">
+              <!--Vorname-->
+              <label for="vorname">Vorname</label>
+              <input type="text" id="vorname" name="vorname" required>
+              <!--Nachname-->
+              <label for="nachname">Nachname</label>
+              <input type="text" id="nachname" name="nachname" required>
+            </div>
+           <!--Email-->
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+          <!--Email-->
+            <label for="tel">Telefonnummer</label>
+            <input type="tel" id="tel" name="tel" required>
+          <!--Kontaktart-->
+          <fieldset class="kontaktart">
+            <legend>Bevorzugte Kontaktart</legend>
+            <label>
+              <input type="radio" name="kontaktart" value="mail" checked>
+              E-Mail
+            </label>
+            <label>
+              <input type="radio" name="kontaktart" value="telefon">
+              Telefon
+            </label>
+          </fieldset>
+          <!--Anliegen-->
+            <label for="anliegen">Dein Anliegen</label>
+            <textarea id="anliegen" name="anliegen" rows="5" required></textarea>
+          <!--Absenden Button-->
+            <button class="bg-color-darkblue color-white font-title-l3"type="submit">✉ Absenden</button>
+          </form>          
+        </section>
+    </main>
+    <footer>
+      <div class="footer-impressum">
+        <p><strong>Impressum</strong></p>
+        <p>Aggregat4 - Service Management as a Service</p>
+        <p>Simon Dürr, Köniz, Schweiz</p>
+        <p>E-Mail: kontakt@aggregat4.ch</p>
+        <p>Verantwortlich für den Inhalt: Simon Dürr</p>
+        <p>Diese Website dient der Information über Dienstleistung. Es wird keine Haftung für weiterführende Links und den Inhalt übernommen.</p>
+      </div>      
+      <a href="mailto:kontakt@aggregat4.ch"class="email-me bg-color-darkblue color-white font-title-l1">✉</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Copyright by Simon Duerr*/
+/*fonts for aggregat4*/
+
+/*Global Font Defintions*/
+:root {
+    --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-l1: 2.5rem;
+    --font-size-l2: 2rem;
+    --font-size-l3: 1.5rem;
+    --font-weight-bold: 700;
+  }
+
+  /*global*/
+p{
+    font-family: var(--font-family-base);
+}
+  
+  /*Title Font*/
+.font-title-l1 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-l1);
+  }
+
+.font-title-l2{
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-l2);
+  }
+  
