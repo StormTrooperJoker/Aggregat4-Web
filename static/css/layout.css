@@ -1,115 +1,133 @@
-/* Copyright by Simon Duerr*/
-/*layout for aggregat4*/
+/*---Copyright by Simon Duerr---*/
 
+/*Define Layout Attributes*/
 
-/*Global Variables */
+/*root attributes*/
 :root {
-/*margin*/
-    --page-margin-inline: 5%;
-    --main-margin-top: 15px;
-    --main-padding: 15px;
-    --content-margin: 15px;
 
-    /*gaps*/
-    --gap-navigation: 4em;
-
-    /*padding*/
-    --global-padding-m: 1em;
-    --global-padding-s: 0.5em;
-    --content-padding: 15px;
-
-    /*height*/
-    --logo-max-height: 100px;
-
-    /*radius*/
-    --logo-radius: 3em;
-    --content-radius: 15px;
-
-    /*shadows*/
-    --shadow-default: 0 4px 12px rgba(0,0,0,0.15);
-}
+  /*sizes*/
+  --mini: 0.5em;
+  --small: 1em;
+  --medium: 2em;
+  --large: 3em;
   
-/*Global Styles*/
-body {
-    margin-inline: var(--page-margin-inline);
-    /*sets text into middle*/
-    text-align: center;
-}
-  
-main {
-    margin-top: var(--main-margin-top);
-    padding: var(--main-padding);
+  /*gaps*/
+  --gap-navigation: 4em;
+
+  /*padding*/
+  --content-padding: 1.2em;
+
+  /*height*/
+  --logo-max-height: 100px;
+
+  /*radius*/
+  --logo-radius: 3em;
+  --content-radius: 1em;
+  --icon-radius: 45%;
+
+  /*shadows*/
+  --shadow-default: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/*definition of white Content Blocks*/
+/*---header---*/
+
+/*Layout Logo*/
+/*Desktop*/
+.layout-logo img {
+  margin-top: var(--small);
+  max-height: var(--logo-max-height);
+  border-radius: var(--logo-radius);
+}
+/*Small Laptops, Tablets*/
+@media (max-width: 450px)  {
+  .layout-logo img{
+    width: auto;
+    max-width: 250px;
+    height: auto;
+  }
+}
+/*Small Mobile Displays*/
+  @media (max-width: 300px)  {
+    .layout-logo img{
+      display: none;
+    }
+}
+
+/*Navigation*/
+/*Desktop*/
+.layout-navigation{
+  align-items: center;
+}
+
+.layout-navigation ul{
+  display: flex;
+  gap: var(--gap-navigation);
+  margin: var(--small);
+  padding-bottom: var(--small);
+}
+.layout-navigation ul li a{
+  transition: all 0.3s ease-in-out;
+}
+
+.layout-navigation ul li a:hover{
+  color: var(--red);
+}
+/*Tablets, Small Laptops, Mobiles*/
+/*Hamburger Button for the Hamburger Menu*/
+.hamburger{
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: var(--small);
+  padding-bottom: var(--small);
+  /*hidden until Media is activated*/
+  display: none;
+}
+
+@media (max-width: 900px){
+  .layout-navigation ul {
+    /*hide navigation list on smaller screens*/
+    display: none;
+  }
+  /* displaymobile Hamburger Menu*/
+  .layout-navigation ul.active{
+    display: block;
+    text-align: left;
+  }
+  .hamburger{
+    /*set Hamburger to visible*/
+    display: block;
+  }
+}
+
+/*---main---*/
 .content-block {
     padding: var(--content-padding);
-    margin: var(--content-margin);
+    margin: var(--small);
     border-radius: var(--content-radius);
     box-shadow: var(--shadow-default);
 }
-  
-  
-/*custom Layout*/
-/*Header Navigation Menue*/
-.layout-logo img {
-    padding: var(--global-padding-m);
-    max-height: var(--logo-max-height);
-    border-radius: var(--logo-radius);
-}
-  
-.layout-navigation {
-    padding: 6px;
-}
-  
-.layout-navigation ul {
-    display: flex;
-    justify-content: center;
-    gap: var(--gap-navigation);
-}
-  
-.layout-navigation ul li a {
-    display: inline-block;
-    transition: transform 0.5s ease;
-}
-.layout-navigation ul li a:hover{
-  color:var(--red)
-}
 
-/*About Aggregat4*/
+
+/*Secion About Us - Die 4 Values*/
 .aboutus-values li{
-    padding: var(--global-padding-s);
-    margin-top: var(--main-margin-top);
-    border-radius: var(--content-radius);
-    box-shadow: var(--shadow-default);
+  margin: var(--small);
+  padding: var(--small);
+  border-radius: var(--content-radius)
 }
 
-/*Forms*/
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  align-content: center;
-  margin: auto;
-}
-/*Contact Button Layout*/
-.contact-form button {
-  margin-top: var(--content-margin);
-  padding: var(--content-padding);
-  border: none;
-  border-radius: var(--content-radius);
-}
+/*---footer---*/
 
+/*email me Icon*/
 .email-me{
   right: 40px;
   bottom: 40px;
   position:fixed;
-  padding: 0.5em;
-  border-radius: 45%;
+  padding: var(--mini);
+  border-radius: var(--icon-radius);
   box-shadow: var(--shadow-default);
 }
 
 .email-me:hover{
   background-color: var(--green)
 }
-  

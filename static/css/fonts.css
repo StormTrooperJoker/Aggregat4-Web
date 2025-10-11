@@ -1,28 +1,37 @@
-/* Copyright by Simon Duerr*/
-/*fonts for aggregat4*/
+/*---Copyright by Simon Duerr---*/
 
-/*Global Font Defintions*/
+/*Define Font Attributes*/
+
+/*root attributes*/
 :root {
     --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-size-l1: 2.5rem;
     --font-size-l2: 2rem;
     --font-size-l3: 1.5rem;
+    --font-size-text: 1rem;
     --font-weight-bold: 700;
   }
 
-  /*global*/
+/*writing style*/
 p{
     font-family: var(--font-family-base);
+    font-size: var(--font-size-text);
 }
   
-  /*Title Font*/
+/*headline large*/
 .font-title-l1 {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-l1);
   }
 
+  /*headline medium*/
 .font-title-l2{
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-l2);
+  }
+/*headline small*/
+  .font-title-l3{
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-l3);
   }
   

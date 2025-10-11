@@ -1,8 +1,8 @@
-/* Copyright by Simon Duerr*/
-/*colors for Aggregat4*/
+/*---Copyright by Simon Duerr---*/
 
-/*Color ---Block
-/*Color Defintions*/
+/*Define Color Attributes*/
+
+/*root attributes*/
 :root {
   --white: #ffffff;
   --bluewhite: #f0f4f8;
