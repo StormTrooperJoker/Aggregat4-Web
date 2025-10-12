@@ -34,4 +34,9 @@ p{
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-l3);
   }
+
+  .font-title-l4{
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-text);
+  }
   

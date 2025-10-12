@@ -106,14 +106,27 @@
     margin: var(--small);
     border-radius: var(--content-radius);
     box-shadow: var(--shadow-default);
+    word-wrap: break-word;
 }
 
 
 /*Secion About Us - Die 4 Values*/
-.aboutus-values li{
+.content-list li{
   margin: var(--small);
   padding: var(--small);
   border-radius: var(--content-radius)
+}
+
+.content-button{
+  cursor: pointer;
+  padding: var(--small);
+  border-radius: var(--logo-radius);
+  border: none;
+  box-shadow: var(--shadow-default);
+}
+
+.content-button:hover{
+  background-color: var(--green);
 }
 
 /*---footer---*/

@@ -1,101 +1,124 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Templates CSS-->
-    <link rel="stylesheet" href="static/css/colors.css">
-    <link rel="stylesheet" href="static/css/fonts.css">
-    <link rel="stylesheet" href="static/css/layout.css">
-    <link rel="stylesheet" href="static/css/utilities.css">
-    <title>Aggregat4</title>
-    <link rel="icon" href="/static/img/favicon.ico">
-</head>
-<body>
-   <header>
-      <div class="navigation bg-color-black">
-        <div class="layout-logo">
-          <img src="static/img/Aggregat4_Logo_final.png" alt="Aggregat4 Logo">
-        </div>
-        <!--Menu Navigation Section-->
-        <nav class="layout-navigation">
-           <!--Menu Hamburger - Mobile/Tablets, Small Laptops-->
-           <button id="toggleDisplayBtn" class="hamburger color-bluewhite font-title-l1" aria-expanded="false" aria-controls="navigation-menu">
-            ☰
-          </button>
-          <!--Menu Desktop View-->
-          <ul id="navigation-menu" class="navigation-list">
-            <li><a class="color-bluewhite font-title-l1"  href="#news">Home</a></li>
-              <li><a class="color-bluewhite font-title-l1"  href="#news">News</a></li>
-              <li><a class="color-bluewhite font-title-l1" href="#services">Services</a></li>
-              <li><a class="color-bluewhite font-title-l1" href="#about">Über Uns</a></li>
-              <li><a class="color-bluewhite font-title-l1" href="#kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-        <!--News-->
-        <section id="news">
-          <article>
-          </article>
-        </section>
-        <!--Catcher-->
-        <section id="home">
-        <div class="content-block">
-          <h2 class=" color-black hover-color-darkblue font-title-l2">Schubkraft für dein Servicemanagement?</h2>
-          <p>Ich bringe meine Erfahrung als Service Manager ein, um deine IT-Services effizienter zu gestalten und deinem Unternehmen echten Mehrwert zu liefern.</p>
-          <div class="block-grid">
-            <div class="block-content-left"></div>
-            <div class="block-content-right"></div>
-          </div> 
-        </div>
-        <div class="content-block">
-          <h2 class="color-darkblue hover-color-darkblue font-title-l2">Vorbereitung für den Start</h2>
-          <p>Wir schaffen <b>die Basis</b> für einen erfolgreichen Start...</p>
-        </div>
-        <div class="content-block">
-          <h2 class="color-darkblue hover-color-darkblue font-title-l2">Countdown 3,2,1 .... Start!</h2>
-          <p>Was alles für einen Reibungslosen <b>Start deines Servicemanagements</b> oder für einen <b>Neustart</b> beachtet werden muss...</p>
-        </div>
-        <div class="content-block">
-          <h2 class="color-darkblue hover-color-darkblue font-title-l2">Damit du auf Kurs bleibst...</h2>
-          <p>Damit du auf Kurs bleibst und es dir nicht wie <a href="https://youtu.be/lJbSJCpb8Mo?si=b4hMD6iDchnKCcoG"><b>Major Tom</b></a> geht ... </p>
-        </div>
-        </section>
-        <!--Services-->
-        <section id="services">
-          <!--Service definition-->
-          <h2 class="font-title-l2 color-black">Services</h2>
-          <div class="content-block">
-            <h3 class="font-title-l3 color-darkblue">SMaaS - Service Management as a Service</h3>
-            <p>Mache jetzt den <b>kostenlosen</b> Servicevergleich</p>
-            <p>Hier wird bald mehr stehen</p>
-            </div>
-        </section>
-        <!--Über Uns-->
-        <section id="about">
-            <h2 class="font-title-l2">Über Aggregat4</h2>
-          <div class="content-block">
-            <h3 class="font-title-l3">Die 4A's (Werte)</h3>
-            <ul class="aboutus-values">
-              <li class="bg-color-bluewhite font-title-l3"><b class="color-darkblue hover-color-darkblue">Adaptivität:</b> Flexibel an Ihre Bedürfnisse anpassbar</li>
-              <li class="bg-color-bluewhite font-title-l3"><b class="color-darkblue hover-color-darkblue">Agilität:</b> Beliebig erweiterbar und schnelle Reaktion auf wandelnde Kundenbedürfnisse</li>
-              <li class="bg-color-bluewhite font-title-l3"><b class="color-darkblue hover-color-darkblue">Analytisch:</b> Durch Analyse und Messung bestehender und zukünftiger Handlungen zu fundierten und nachhaltigen Ergebnissen</li>
-              <li class="bg-color-bluewhite font-title-l3"><b class="color-darkblue hover-color-darkblue">Automatisierung:</b> Durch Tooleinsatz und Analyse zu schnelleren, effizienteren Prozessen und damit auch zufriedene Kunden</li>
-            </ul>
+<html lang="de">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Templates CSS-->
+      <link rel="stylesheet" href="static/css/colors.css">
+      <link rel="stylesheet" href="static/css/fonts.css">
+      <link rel="stylesheet" href="static/css/layout.css">
+      <link rel="stylesheet" href="static/css/utilities.css">
+      <title>Aggregat4</title>
+      <link rel="icon" href="/static/img/favicon.ico">
+  </head>
+  <body>
+    <header>
+        <div class="navigation bg-color-black">
+          <div class="layout-logo">
+            <img src="static/img/Aggregat4_Logo_final.png" alt="Aggregat4 Logo">
           </div>
-        </section>
-        <!--Contact-->
-        <section id="kontakt" class="contact-section">
-          <h2 class="font-title-l3 text-center">Sie haben Fragen?</h2>
-          <p>Senden Sie mir eine Email unter <strong><a href="mailto:kontakt@aggregat4.ch">kontakt@aggregat4.ch</a></strong></p>        
-        </section>
-    </main>
-    <footer> 
-      <a href="mailto:kontakt@aggregat4.ch"class="email-me bg-color-darkblue color-white font-title-l1">✉</a>
-    </footer>
-    <!--Load Javascript-->
-    <script defer src="javascript/dynamics.js"></script>
-    <script defer src="javascript/navigation.js"></script>
-</body>
+          <!--Menu Navigation Section-->
+          <nav class="layout-navigation">
+            <!--Menu Hamburger - Mobile/Tablets, Small Laptops-->
+            <button id="toggleDisplayBtn" class="hamburger color-bluewhite font-title-l1" aria-expanded="false" aria-controls="navigation-menu">
+              ☰
+            </button>
+            <!--Menu Desktop View-->
+            <ul id="navigation-menu" class="navigation-list">
+              <li><a class="color-bluewhite font-title-l1"  href="#news">Home</a></li>
+                <li><a class="color-bluewhite font-title-l1"  href="#news">News</a></li>
+                <li><a class="color-bluewhite font-title-l1" href="#services">Services</a></li>
+                <li><a class="color-bluewhite font-title-l1" href="#about">Über Uns</a></li>
+                <li><a class="color-bluewhite font-title-l1" href="#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+          <!--News-->
+          <section id="news">
+            <article>
+            </article>
+          </section>
+          <!--Catcher-->
+          <section id="home">
+            <h1 class=" color-black hover-color-darkblue font-title-l1">Schubkraft für deine IT?</h1>
+          <div class="content-block">
+            <!--Home Title-->
+            <h2 class="color-darkblue hover-color-darkblue font-title-l2">Mit unserer Expertise im Bereich IT & Servicemanagement helfen wir dir deine Prozesse besser und effizienter zu gestalten um dir einen echten Mehrwert zu liefern.</h2>     
+            </div> 
+          </div>
+          <div class="content-block">
+            <h2 class="color-darkblue hover-color-darkblue font-title-l2">Vorbereitung für den Start</h2>
+            <P>Ob Anpassung bestehender Workflows, Etablierung neuer IT oder Servicemanagement Prozesse</P>
+            <p>Wir schaffen <b>die Basis</b> für einen erfolgreichen Start...</p>
+          </div>
+          <div class="content-block">
+            <h2 class="color-darkblue hover-color-darkblue font-title-l2">Countdown 3,2,1 .... Start!</h2>
+            <p>Was alles für einen Reibungslosen <b>Start</b> oder für einen <b>Prozess Neustart</b> beachtet werden muss...</p>
+          </div>
+          <div class="content-block">
+            <h2 class="color-darkblue hover-color-darkblue font-title-l2">Damit Sie auf Kurs bleiben...</h2>
+            <p>Damit Sie <b>weiterhin</b> auf Kurs bleiben und es Ihnen nicht wie <a href="https://youtu.be/lJbSJCpb8Mo?si=b4hMD6iDchnKCcoG"><b>Major Tom</b></a> geht ... </p>
+          </div>
+          </section>
+          <!--Services-->
+          <section id="services">
+            <!--Service definition-->
+            <h2 class="font-title-l1 color-black">Services</h2>
+            <div class="content-block">
+              <h3 class="font-title-l2 color-darkblue">SMaaS - Servicemanagement as a Service</h3>
+                <p class="font-title-l4">Warum Servicemangement "kein modernes Management Buzzword" ist<p>
+                <p>Wir sind der Meinung, die <b>Kunden sind die Basis jeder Firma.</b> Und genau da setzt unser <b>Servicemangement Ansatz</b> an. Von der Analyse, zur Implementierung bis hin zur langfristigen Betreuung und Unterstützung </p>
+                <p>Entscheiden Sie wie sie die Zusammenarbeit mit uns gestalten möchten.</p>
+                <ul class="content-list">
+                  <li class="bg-color-bluewhite font-title-l4"><b class="color-darkblue hover-color-darkblue">Kundenbindung:</b> Trotz Digitalisierung setzen Kunden auf persönliche nähe, Partnerschaft und Vertrauen</li>
+                  <li class="bg-color-bluewhite font-title-l4"><b class="color-darkblue hover-color-darkblue">Prozesse:</b> Mit guten durchdachten Prozessen können Anfragen gezielt und speditiv beantwortet werden ohne dass der Kunde das Gefühl von der Vertrauen und persönlicher Nähe verliert</li>
+                  <li class="bg-color-bluewhite font-title-l4"><b class="color-darkblue hover-color-darkblue">Effizienz:</b> Prozesse sparen Zeit und Ressourcen, die wiederum für das Kerngeschäft aufgewendet werden können</li>
+                  <li class="bg-color-bluewhite font-title-l4"><b class="color-darkblue hover-color-darkblue">Forecast:</b> Mit Messungen und Befragungen aktuelle Schwachstellen im Kundenprozess sichtbar machen</li>
+                </ul>
+                <h4 class="font-title-l4">Jetzt Katalog runterladen...</h4>
+                <button class="content-button bg-color-darkblue color-white font-title-l3">Katalog herunterladen</button>
+              </div>
+            </div>
+            <div class="content-block">
+              <h3 class="font-title-l2 color-darkblue">IT Projektleitung</h3>
+                <p>Projektleitung von IT Projekten</p>
+                <h4 class="font-title-l4">Jetzt Katalog runterladen...</h4>
+                <button class="content-button bg-color-darkblue color-white font-title-l3">Katalog herunterladen</button>
+              </div>
+              <div class="content-block">
+                <h3 class="font-title-l2 color-darkblue">IT Support Remote/ vor Ort</h3>
+                <h4 class="font-title-l4">Jetzt Katalog runterladen...</h4>
+                <button class="content-button bg-color-darkblue color-white font-title-l3">Katalog Herunterladen</button>
+              </div>
+
+            </div>
+          </section>
+          <!--Über Uns-->
+          <section id="about">
+            <h2 class="font-title-l1">Über Aggregat4</h2>
+            <div class="content-block">
+              <h3 class="font-title-l3">Die 4A's (Werte)</h3>
+              <ul class="content-list">
+                <li class="bg-color-bluewhite font-title-l4"><b class="color-darkblue hover-color-darkblue">Adaptivität:</b> Flexibel an Ihre Bedürfnisse anpassbar</li>
+                <li class="bg-color-bluewhite font-title-l4"><b class="color-darkblue hover-color-darkblue">Agilität:</b> Beliebig erweiterbar und schnelle Reaktion auf wandelnde Kundenbedürfnisse</li>
+                <li class="bg-color-bluewhite font-title-l4"><b class="color-darkblue hover-color-darkblue">Analytisch:</b> Durch Analyse und Messung bestehender und zukünftiger Handlungen zu fundierten und nachhaltigen Ergebnissen</li>
+                <li class="bg-color-bluewhite font-title-l4"><b class="color-darkblue hover-color-darkblue">Automatisierung:</b> Durch Tooleinsatz und Analyse zu schnelleren, effizienteren Prozessen und damit auch zufriedene Kunden</li>
+              </ul>
+            </div>
+          </section>
+          <!--Contact-->
+          <section id="kontakt" class="contact-section">
+            <h2 class="font-title-l1 text-center">Sie haben Fragen?</h2>
+            <p>Senden Sie mir eine Email unter <strong><a href="mailto:kontakt@aggregat4.ch">kontakt@aggregat4.ch</a></strong></p>        
+          </section>
+      </main>
+      <footer> 
+        <a href="mailto:kontakt@aggregat4.ch"class="email-me bg-color-darkblue color-white font-title-l1">✉</a>
+      </footer>
+      <!--Load Javascript-->
+      <script defer src="javascript/dynamics.js"></script>
+      <script defer src="javascript/navigation.js"></script>
+  </body>
 </html>
